@@ -4,6 +4,8 @@ Forked from https://github.com/vicerust/65816-SNES-Assembly
 
 See [here](https://marketplace.visualstudio.com/items?itemName=joshneta.65816-assembly&ssr=false) for instructions on how to set up colors for your instance of VSCode using user settings. Mine is here:
 
+To set this up/use this I followed the instructions in the developer notes of this otherwise unrelated extension [here](https://marketplace.visualstudio.com/items?itemName=dagenbrock.vscode-merlin-assembler)
+
 {
     "editor.tokenColorCustomizations": {
         "textMateRules": [
