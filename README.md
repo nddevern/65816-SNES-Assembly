@@ -1,14 +1,116 @@
-# Basic 65816 SNES Assembly Autocomplete
+TODO: Publish this as an actual extension
 
-This extension provides basic programmatic support for SNES Assembly, with the primary use being SMW Romhacking.
+Forked from https://github.com/vicerust/65816-SNES-Assembly
 
-Currently supported features:
+See [here](https://marketplace.visualstudio.com/items?itemName=joshneta.65816-assembly&ssr=false) for instructions on how to set up colors for your instance of VSCode using user settings. Mine is here:
 
-*  Syntax Highlighting
-*  Opcode definitions on hover, along with extended documentation courtesy of randomdude999 and [this wonderful guide](https://media.smwcentral.net/randomdude999/snes_references/65C816_opcodes.html)
-*  RAM Address definitions on hover, pulled from the [SMW Memory Map](https://www.smwcentral.net/?p=memorymap&game=smw)
-*  Document outline support for subroutines. Currently only in alphabetical order, a limitation with VSC.
-
-Cannibalized from [my other langserver](https://marketplace.visualstudio.com/items?itemName=vicerust.overwatch&ssr=false) and the language highlighting from [this extension](https://marketplace.visualstudio.com/items?itemName=joshneta.65816-assembly&ssr=false)
-
-Message me @Vice#5333 on Discord if you have problems.
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.xkas.command.concatenate",
+                "settings": {
+                    "foreground": "#848484"
+                }
+            },
+            {
+                "scope": "keyword.xkas.mnemonic",
+                "settings": {
+                    "foreground": "#b69cff"
+                }
+            },
+            {
+                "scope": "keyword.xkas.asm",
+                "settings": {
+                    "foreground": "#828cff"
+                }
+            },
+            {
+                "scope": "keyword.xkas.define",
+                "settings": {
+                    "foreground": "#8bdfe8"
+                }
+            },
+            {
+                "scope": "constant.xkas.numeric.hexvalue",
+                "settings": {
+                    "foreground": "#d6ce58"
+                }
+            },
+            {
+                "scope": "constant.xkas.numeric.decvalue",
+                "settings": {
+                    "foreground": "#c7c7c7"
+                }
+            },
+            {
+                "scope": "constant.xkas.numeric.binvalue",
+                "settings": {
+                    "foreground": "#ed93e0"
+                }
+            },
+            {
+                "scope": "constant.xkas.numeric.address",
+                "settings": {
+                    "foreground": "#ed828d"
+                }
+            },
+            {
+                "scope": "label.xkas.sublabel.reference",
+                "settings": {
+                    "foreground": "#e3c39d",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "label.xkas.sublabel",
+                "settings": {
+                    "foreground": "#e3c39d",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "label.xkas.macrolabel.reference",
+                "settings": {
+                    "foreground": "#bae6cf",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "label.xkas.macrolabel",
+                "settings": {
+                    "foreground": "#bae6cf",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "label.xkas.label.reference",
+                "settings": {
+                    "foreground": "#fab969",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "label.xkas.label",
+                "settings": {
+                    "foreground": "#fab969",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "label.xkas.macrodefinition",
+                "settings": {
+                    "foreground": "#97fcc8",
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "label.xkas.macroreference",
+                "settings": {
+                    "foreground": "#97fcc8",
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    }
+}
